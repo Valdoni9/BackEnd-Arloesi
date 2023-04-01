@@ -24,4 +24,4 @@ Os possíveis níveis de prioridade são: Baixa, Média, Alta.
 - [X] Criar testes automatizados (unitários, e2e)
 - [X] Utilizar docker
 - [X] Realizar deploy
-- [X] Criar documentação (swagger) -->
+- [X] Criar documentação (swagger)
