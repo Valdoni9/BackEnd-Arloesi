@@ -1,0 +1,11 @@
+version: '1'
+
+services:
+  composeTodo:
+    image: bitnami/mariadb:latest
+    ports:
+      - 3306:3306
+    environment:
+      - MARIADB_USERNAME=root
+      - MARIADB_ROOT_PASSWORD=123
+      - MARIADB_DATABASE=todo-database
