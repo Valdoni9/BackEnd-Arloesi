@@ -7,7 +7,6 @@ import {
   HttpStatus,
   Param,
   ParseUUIDPipe,
-  Patch,
   Post,
   Put,
 } from '@nestjs/common';
@@ -60,18 +59,6 @@ export class TodoController {
   async update(
     @Param('id', new ParseUUIDPipe()) id: string,
     @Body() body: UpdateTodoDto,
-  ) {
-    return await this.todoService.update(id, body);
-  }
-
-  @Patch(':id')
-  @ApiOperation({ summary: 'Atualizar os dados de uma tarefa' })
-  @ApiResponse({ status: 201, description: 'Tarefa atualizada com sucesso' })
-  @ApiResponse({ status: 404, description: 'Task não foi encontrada' })
-  async updateOne(
-    @Param('id', new ParseUUIDPipe()) id: string,
-    @Body() body: UpdateTodoDto,
-    isDone: number,
   ) {
     return await this.todoService.update(id, body);
   }

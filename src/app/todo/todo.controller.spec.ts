@@ -1,7 +1,7 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { CreateTodoDto } from './dto/create-todo.dto';
 import { UpdateTodoDto } from './dto/update-todo.dto';
-import { PriorityEntity, TodoEntity } from './entity/todo.entity';
+import { TodoEntity } from './entity/todo.entity';
 import { TodoController } from './todo.controller';
 import { TodoService } from './todo.service';
 
