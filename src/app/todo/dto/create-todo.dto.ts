@@ -8,7 +8,7 @@ export class CreateTodoDto {
   task: string;
 
   @IsNotEmpty()
-  @IsIn([1, 2, 3])
+  @IsIn([0, 1, 2])
   @ApiProperty()
   priority: PriorityEntity;
 
