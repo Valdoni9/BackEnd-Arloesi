@@ -16,7 +16,7 @@ import { UpdateTodoDto } from './dto/update-todo.dto';
 import { IndexTodoSwagger } from './swagger/index-todo.swagger';
 import { TodoService } from './todo.service';
 
-@Controller('api/todoArloesi')
+@Controller('api/todoarloesi')
 @ApiTags('todos')
 export class TodoController {
   constructor(private readonly todoService: TodoService) {}
