@@ -4,8 +4,8 @@ import {
 } from 'class-validator';
 import {} from 'class-validator';
 
-@ValidatorConstraint({ name: 'validateUpdateFinish', async: false })
-export class forbiddentochange implements ValidatorConstraintInterface {
+@ValidatorConstraint({ name: 'forbiddentoChange', async: false })
+export class forbiddentoChange implements ValidatorConstraintInterface {
   validate(isDone: number) {
     return isDone === 0 ? true : false;
   }
