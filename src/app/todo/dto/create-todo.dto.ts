@@ -1,7 +1,7 @@
 import { ApiProperty } from '@nestjs/swagger';
 import { IsIn, IsNotEmpty, Validate } from 'class-validator';
 import { PriorityEntity } from '../entity/todo.entity';
-import { forbiddentochange } from './validate-todo.dto';
+import { forbiddentoChange } from './validate-todo.dto';
 
 export class CreateTodoDto {
   @IsNotEmpty()
@@ -16,6 +16,6 @@ export class CreateTodoDto {
   @IsNotEmpty()
   @IsIn([0, 1])
   @ApiProperty()
-  @Validate(forbiddentochange)
+  @Validate(forbiddentoChange)
   isDone: number;
 }
